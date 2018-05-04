@@ -38,3 +38,16 @@ If you don't want to download the files for use on your servers, you can just us
 `https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/d034ed4a/UI2.min.js` <br>
 `https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/4420f30f/UI2.min.css` <br>
 
+## UI Components
+bla bla
+ - Buttons
+ - Input Text
+ - Input Passcode
+ - Radio Box
+ - Select Box
+ - Dropdown Selector
+ - Text Tags
+ - Accordion
+ - Submit Form
+ - Cards
+ - Grid
