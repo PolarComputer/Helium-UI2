@@ -18,3 +18,25 @@ If you don't want to download the files for use on your servers, you can just us
 
 
 
+```html
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>PolarOS UI2 Kit</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/4420f30f/UI2.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <h1>Example Page</h1>
+</body>
+  
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js'></script>
+<script  src="https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/d034ed4a/UI2.min.js"></script>
+  
+</html>
+
+```
