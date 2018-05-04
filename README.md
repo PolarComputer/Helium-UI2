@@ -77,5 +77,9 @@ To make a custom button you can make make your css id and add it to your own css
 ````
 
 ## Text Input
-Text Inputs are very simple and do not require any changes to your code. These will be generated as long as your css and javascipt is started in the proper order. The text input is an element to collect user input that is a single-line input. You should use them where you need to collet data from a user that only takes a single-line value. This type of input is great for emails, URL's, search terms, names, and textual information (Mozilla).<br>
+Text Inputs are very simple and do not require any changes to your code. These will be generated as long as your css and javascipt is sourced in the proper order, see setup above. The text input is an element to collect user input that is a single-line input. You should use them where you need to collet data from a user that only takes a single-line value. This type of input is great for emails, URL's, search terms, names, and textual information (Mozilla). To set the text of the input box that appears add a attribute called placeholder. Make sure quotes are around the string if it contains multiple words. Try to keep this string short and to the point. Set the place holder as what information you desire to collect. (For example First Name, Email, Personal Website).<br>
  ![Alt text](images/input-UI2.gif?raw=true "PolarOS UI2 Kit - Text Input")
+ 
+ ````html
+<input type="text" placeholder="First Name">
+````
