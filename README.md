@@ -51,3 +51,31 @@ bla bla
  - Submit Form
  - Cards
  - Grid
+ 
+ ## Buttons
+ Just make a standard html button and it will be set to the defualt white button. There are other options for button colors and you can even make custom colors. The following colors can be used by defualt. primary, secondary, blue, white, grey, orange and red.<br>
+ ![Alt text](images/buttons-UI2.png?raw=true "PolarOS UI2 Kit - Buttons")
+ ``` html 
+<button>Main Button</button>
+<button id=blue>Secondary Button</button>
+<button id=grey>Grey Button</button>
+<button id=red>Red Button</button>
+<button id=orange>Orange Button</button>
+```
+
+## Custom Buttons
+To make a custom button you can make make your css id and add it to your own css file. Then you can add a custom button with that id. We recommend not to customize anything else about the button to ensure it stays consistant.
+```` css
+#custom-button {
+   background-color: #148ff5; /* Button Color */
+   color: #ffffff; /* Text Color */
+}
+````
+
+```` html
+<button id=custom-button>Custom Button</button>
+````
+
+## Text Input
+Text Inputs are very simple and do not require any changes to your code. These will be generated as long as your css and javascipt is started in the proper order. The text input is an element to collect user input that is a single-line input. You should use them where you need to collet data from a user that only takes a single-line value. This type of input is great for emails, URL's, search terms, names, and textual information (Mozilla).<br>
+ ![Alt text](images/input-UI2.gif?raw=true "PolarOS UI2 Kit - Text Input")
