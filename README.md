@@ -11,13 +11,6 @@ Add the following code to the bottom.<br>
 `<script src='https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js'></script>`<br>
 `<script  src="js/index.js"></script>`
 
-## CDN <br>
-If you don't want to download the files for use on your servers, you can just use our CDN hosted by rawgit. Keep in mind, if you do this your jquery maynot be built to run on on the newest verison we have.
-`https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/d034ed4a/UI2.min.js` <br>
-`https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/4420f30f/UI2.min.css` <br>
-
-
-
 ```html
 <!DOCTYPE html>
 <html lang="en" >
@@ -38,5 +31,10 @@ If you don't want to download the files for use on your servers, you can just us
 <script  src="https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/d034ed4a/UI2.min.js"></script>
   
 </html>
-
 ```
+
+## CDN <br>
+If you don't want to download the files for use on your servers, you can just use our CDN hosted by rawgit. Keep in mind, if you do this your jquery maynot be built to run on on the newest verison we have.
+`https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/d034ed4a/UI2.min.js` <br>
+`https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/4420f30f/UI2.min.css` <br>
+
