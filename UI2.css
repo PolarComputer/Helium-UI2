@@ -88,6 +88,9 @@ input[type="text"], input[type="passcode"] {
   padding: 4px 0;
   border-bottom: 1px solid #ccc;
   background-color: transparent;
+}
+
+label {
   pointer-events: none;
 }
 
@@ -119,7 +122,6 @@ input[type="text"], input[type="passcode"] {
   color: #aaa;
   transition: 0.3s;
   letter-spacing: 0.5px;
-  
 }
 
 
