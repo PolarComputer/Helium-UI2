@@ -88,6 +88,7 @@ input[type="text"], input[type="passcode"] {
   padding: 4px 0;
   border-bottom: 1px solid #ccc;
   background-color: transparent;
+  pointer-events: none;
 }
 
 .passcode {
@@ -117,9 +118,8 @@ input[type="text"], input[type="passcode"] {
   top: 9px;
   color: #aaa;
   transition: 0.3s;
-  z-index: -1;
   letter-spacing: 0.5px;
-  pointer-events: none;
+  
 }
 
 
