@@ -81,7 +81,7 @@ for (var i = 0; i < inputs.length; i++) {
 
 
 // Ripple
-/*( function($) {
+( function($) {
       // Ripple Buttons
       $.fn.ripple = function(config) {
 
@@ -137,9 +137,13 @@ for (var i = 0; i < inputs.length; i++) {
     };
 })(jQuery);
 $(document).ready( function() {
-	$("button").ripple();
+	if ( $( "button" ) ) { 
+		$("button").ripple();
+	}
+	if ( $( "input[type=submit]" ) ) {	
   $("input[type=submit]").ripple();
-});*/
+	}
+});
 
 
 
