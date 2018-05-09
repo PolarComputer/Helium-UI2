@@ -53,14 +53,14 @@ for (var i = 0; i < inputs.length; i++) {
     $( inpute ).attr('placeholder', "");
     $( inpute ).addClass( 'input' );
   }
-  if ( $( inputs[i] ).attr( "type" ) == "passcode"  ) {
+  if ( $( inputs[i] ).attr( "type" ) == "password"  ) {
     var inpute = inputs[i];
     $( inpute ).wrap( "<div class='size input-effect' style='width:" + $( inpute ).attr('width') + ";'></div>" );
     $( "<span class='focus-border'></span></div>" ).insertAfter( inpute );
     $( inpute ).after( "<label>" + $( inpute ).attr('placeholder') + "</label>");
     $( inpute ).attr('placeholder', "");
     $( inpute ).addClass( 'input' );
-    $( inpute ).addClass( 'passcode' );
+    $( inpute ).addClass( 'password' );
   }
 }
 
