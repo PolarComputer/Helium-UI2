@@ -72,7 +72,7 @@ button:hover {
   padding-bottom: 15px;
   width: 250px; /* Defualt */
 }
-input[type="text"], input[type="passcode"] {
+input[type="text"], input[type="password"] {
   color: #333;
   font-weight: 600;
   font-size: 14px;
@@ -94,7 +94,7 @@ label {
   pointer-events: none;
 }
 
-.passcode {
+.password {
   -webkit-text-security: disc;
 }
 
