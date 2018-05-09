@@ -76,6 +76,13 @@ for (var i = 0; i < inputs.length; i++) {
 				$(this).removeClass("has-content");
 			}
 		})
+		$(".input-effect input").change(function(){
+			if($(this).val() != ""){
+				$(this).addClass("has-content");
+			}else{
+				$(this).removeClass("has-content");
+			}
+		})
 	});
 
 
