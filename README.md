@@ -42,7 +42,6 @@ If you don't want to download the files for use on your servers, you can just us
 bla bla
  - Buttons
  - Input Text
- - Input Passcode
  - Radio Box
  - Select Box
  - Dropdown Selector
@@ -82,4 +81,11 @@ Text Inputs are very simple and do not require any changes to your code. These w
  
  ````html
 <input type="text" placeholder="First Name">
+````
+
+## Radio Boxes
+A radio button is great for when you want to get one selction from the user. The radio button does only allow one selction, if you want the user to be able select more than one option try select boxes instead. It's called a radio box because it work just like the buttons on an old-fasion radio, you push one down and all the other come back up (Mozilla). To make a input into a radio box set the type attribute equal to radio, like `type="radio"`. To set the label text next to the radio box add the attribute placeholder inside the input element, ex. ` placeholder="Text Label"`. To link all the radio box togeather, so only one in the group can be selected at a time, asd the attribute name and set all the input boxes you want to link with the same name. Then add a custom `value` attribution to each of the inputs in the group. In your javascript you can use the value attribute to get the selected radio box. To disable a radio box, so it can't be selected but is still visble add the attribute `disable` to the input.
+
+```` html
+<input type="radio"
 ````
