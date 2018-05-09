@@ -28,7 +28,7 @@ Add the following code to the bottom.<br>
   
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js'></script>
-<script  src="https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/ca9c3ce1/UI2.min.js"></script>
+<script  src="https://github.com/PolarComputer/PolarOS-UI2/blob/master/UI2.min.js"></script>
   
 </html>
 ```
