@@ -95,3 +95,5 @@ A radio button is great for when you want to get one selction from the user. The
 
 ## Check Boxes
 A check box is very similar to a radio box with one vast differnce, you can select multiple items. If you would like a user to only be able to select one item please look above at radio boxes. To create a check box add an input with the attribute type equal to checkbox, like `type="checkbox"`. To set the label next to the check box all you have to do is add another attrubute inside the input element called placeholder and set that equal to what you want your label to be, `placeholder="Text Label"`. To link all the check boxes togeather into a group set all the attribute `name` inside the inout element as the same. To disable a check box, so it can't be selected but is still visable add the attribute `disable` to the input.
+
+## Dropdown Select
