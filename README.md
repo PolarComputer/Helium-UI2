@@ -90,13 +90,14 @@ Text Inputs are very simple and do not require any changes to your code. These w
 
 ## Radio Boxes (FIXME)
 A radio button is great for when you want to get one selction from the user. The radio button does only allow one selction, if you want the user to be able select more than one option try select boxes instead. It's called a radio box because it work just like the buttons on an old-fasion radio, you push one down and all the other come back up (Mozilla). To make a input into a radio box set the type attribute equal to radio, like `type="radio"`. To set the label text next to the radio box add the attribute placeholder inside the input element, ex. ` placeholder="Text Label"`. To link all the radio box togeather, so only one in the group can be selected at a time, set the attribute `name` and set all the input boxes you want to link with the same name. Then add a custom `value` attribution to each of the inputs in the group. In your javascript you can use the value attribute to get the selected radio box. To disable a radio box, so it can't be selected but is still visble add the attribute `disable` to the input.
+ ![Alt text](images/radio-box-UI2.gif?raw=true "PolarOS UI2 Kit - Radio Box Input")
 
 ```` html
 <input type="radio"
 <input type="radio" name="color" value="blue" placeholder="Blue"></input>
 <input type="radio" name="color" value="red" placeholder="Red"></input>
 <input type="radio" name="color" value="green" placeholder="Green"></input>
-<input type="radio" name="color" value="orange" placeholder="Orange"></input>
+<input type="radio" name="color" value="orange" placeholder="Orange" checked></input>
 ````
 
 ### How to get Value
@@ -112,5 +113,25 @@ $('input[name="color"]:checked').val();
 
 ## Check Boxes
 A check box is very similar to a radio box with one vast differnce, you can select multiple items. If you would like a user to only be able to select one item please look above at radio boxes. To create a check box add an input with the attribute type equal to checkbox, like `type="checkbox"`. To set the label next to the check box all you have to do is add another attrubute inside the input element called placeholder and set that equal to what you want your label to be, `placeholder="Text Label"`. To link all the check boxes togeather into a group set all the attribute `name` inside the inout element as the same. To disable a check box, so it can't be selected but is still visable add the attribute `disable` to the input.
+```` html
+<input type="checkbox" name="extracranial" value="music" placeholder="Music"></input>
+<input type="checkbox" name="extracranial" value="sports" placeholder="Sports"></input>
+<input type="checkbox" name="extracranial" value="gaming" placeholder="Gaming"></input>
+<input type="checkbox" name="extracranial" value="tv" placeholder="Watching TV" checked></input>
+````
+
+### How to get Value
+#### Pure Javascript
+```` javascript
+document.querySelector('input[name="extracranial"]:checked').value
+````
+
+#### jQuery 
+```` javascript
+$("input[type=checkbox][name=extracranial]:checked").each(function(){
+  console.log( $( this ).attr( "value" ) );
+  // do what you want here
+});
+````
 
 ## Dropdown Select
