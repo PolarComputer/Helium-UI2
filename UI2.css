@@ -419,7 +419,7 @@ input[type=radio]:disabled+label {
   display: inline-block;
 }
 .checkbox label {
-  margin: 15px 0px 10px 8px !important;
+  margin: 15px 0px 10px 40px !important;
   font-weight: 600;
   color: #333;
 }
