@@ -20,6 +20,17 @@ label, tag {
 user-select: none; /* Standard */
 }
 
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration-color: #148ff5;
+  color: #148ff5;
+}
+
+
+
 /******************/
 /*    Buttons     */
 /******************/
