@@ -1,9 +1,8 @@
 # PolarOS Helium-UI2 (He2)
-Offical Name: Helium-UI2
-Unoffical Name: Helium Kit
-Shortcut Name: He2
-How to use Helium kit.
-
+Offical Name: Helium-UI2<br>
+Unoffical Name: Helium Kit<br>
+Shortcut Name: He2<br>
+PolarOS Helium-UI2 Kit is a universal element kit for PolarOS and PolarOS sites. The best part is anyone is free to use it. All you have is credit Polar Computers Inc. in your card and follow the implementation instructions below.
 ## Setup
 Add the following code to your header or top.<br>
 `<link rel="stylesheet" href="css/style.css">`<br>
@@ -21,7 +20,7 @@ Add the following code to the bottom.<br>
 <head>
   <meta charset="UTF-8">
   <title>PolarOS UI2 Kit</title>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/68edfb66/UI2.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -31,7 +30,7 @@ Add the following code to the bottom.<br>
   
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js'></script>
-<script  src="https://cdn.rawgit.com/PolarComputer/Helium-UI2/ff8fdbfb/UI2.min.js"></script>
+<script  src="https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.js"></script>
   
 </html>
 ```
@@ -40,11 +39,11 @@ Add the following code to the bottom.<br>
 If you don't want to download the files for use on your servers, you can just use our CDN hosted by rawgit. Keep in mind, if you do this your jquery maynot be built to run on on the newest verison we have.
 #### Version 1
 Note this version is missing charts.<br>
-`https://cdn.rawgit.com/PolarComputer/Helium-UI2/ff8fdbfb/UI2.min.js` <br>
-`https://cdn.rawgit.com/PolarComputer/Helium-UI2/68edfb66/UI2.min.css` <br>
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.js` <br>
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.css` <br>
 
 ## UI Components
-bla bla
+There are alot of elements that can be used inside Helium Kit and were adding more soon. Here is list of most of the elements most all of them should intigrate with your html no prombelm, because our javascript will place the extra elements it needs around it. ( We are adding more soon )
  - Buttons
  - Input Text
  - Radio Box
@@ -171,4 +170,35 @@ Tags are perfect for just that taging thing. It can also be great to get keyword
 ````
 
 ## Accordion
+Accordions are useful when you want to toggle between hiding and showing large amount of content (w3Schools). Each section can be expanded by the user. If you want a section to be expanded automaticly just add the class `active` to the `li` of the section. There is no user content you can get from this, because it isn't and input. How ever it fou want you can check to see which one is exapned by looking at the `li` with the class `active`.<br>
+ ![Alt text](images/accordion-UI2.png?raw=true "PolarOS UI2 Kit - Accordion")
 
+```` html
+<ul class="accordion">
+	<li>
+		<a>Lorem ipsum</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
+	</li>
+	<li>
+		<a>Repellat Odit Aliquid</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
+	</li>
+	<li>
+		<a>Dolor sit Amet</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.</p>
+	</li>
+</ul>
+````
+
+## Cards
+Cards are great for displaying repeeated content. We have many different card types and our system will automaticly pick up and do what they need to. If you would like to organise them using our grid system just wrap your card with the element `<grid>` it's not 100% but it works pretty well. Below is an image of all of our different cards with the code below that on how to make each. I you are making a tag card, which just has a heading and a sub-heading, you can set the color. The colors you can choice from are `none, blue, grey, yellow, orange, purple, red` you can set the color by just adding the attirbute `color` inside the card element.<br>
+ ![Alt text](images/cards-UI2.png?raw=true "PolarOS UI2 Kit - Cards")
+```` html
+<card h1="Card Tag" h2="Blue Card Tag | Polar UI Kit" color=none></card>
+<card h1="Card Tag" h2="Blue Card Tag | Polar UI Kit"></card>
+<card h1="Card Tag" h2="Blue Card Tag | Polar UI Kit" color=grey></card>
+
+<card h1="Card Tag" h2="Blue Card Tag | Polar UI Kit" image="img/link.png"></card>
+<card h2="Blue Card Tag | Polar UI Kit" image="img/link.png"></card>
+<card image="img/link.png"></card>
+````
