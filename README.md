@@ -20,7 +20,7 @@ Add the following code to the bottom.<br>
 <head>
   <meta charset="UTF-8">
   <title>PolarOS UI2 Kit</title>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/baba9fcf/UI2.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -37,6 +37,11 @@ Add the following code to the bottom.<br>
 
 ## CDN <br>
 If you don't want to download the files for use on your servers, you can just use our CDN hosted by rawgit. Keep in mind, if you do this your jquery maynot be built to run on on the newest verison we have.
+#### Version 1.0.1
+Note this version is missing charts.<br>
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.js` <br>
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/baba9fcf/UI2.min.css`<br>
+
 #### Version 1
 Note this version is missing charts.<br>
 `https://cdn.rawgit.com/PolarComputer/Helium-UI2/1e3f73d4/UI2.min.js` <br>
@@ -87,7 +92,7 @@ Text Inputs are very simple and do not require any changes to your code. These w
 <input type="text" placeholder="First Name">
 ````
 
-## Radio Boxes (FIXME)
+## Radio Boxes
 A radio button is great for when you want to get one selction from the user. The radio button does only allow one selction, if you want the user to be able select more than one option try select boxes instead. It's called a radio box because it work just like the buttons on an old-fasion radio, you push one down and all the other come back up (Mozilla). To make a input into a radio box set the type attribute equal to radio, like `type="radio"`. To set the label text next to the radio box add the attribute placeholder inside the input element, ex. ` placeholder="Text Label"`. To link all the radio box togeather, so only one in the group can be selected at a time, set the attribute `name` and set all the input boxes you want to link with the same name. Then add a custom `value` attribution to each of the inputs in the group. In your javascript you can use the value attribute to get the selected radio box. To disable a radio box, so it can't be selected but is still visble add the attribute `disable` to the input.<br>
  ![Alt text](images/radio-box-UI2.png?raw=true "PolarOS UI2 Kit - Radio Box Input")
 
