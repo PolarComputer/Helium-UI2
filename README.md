@@ -89,8 +89,8 @@ Text Inputs are very simple and do not require any changes to your code. These w
 ````
 
 ## Radio Boxes (FIXME)
-A radio button is great for when you want to get one selction from the user. The radio button does only allow one selction, if you want the user to be able select more than one option try select boxes instead. It's called a radio box because it work just like the buttons on an old-fasion radio, you push one down and all the other come back up (Mozilla). To make a input into a radio box set the type attribute equal to radio, like `type="radio"`. To set the label text next to the radio box add the attribute placeholder inside the input element, ex. ` placeholder="Text Label"`. To link all the radio box togeather, so only one in the group can be selected at a time, set the attribute `name` and set all the input boxes you want to link with the same name. Then add a custom `value` attribution to each of the inputs in the group. In your javascript you can use the value attribute to get the selected radio box. To disable a radio box, so it can't be selected but is still visble add the attribute `disable` to the input.
- ![Alt text](images/radio-box-UI2.gif?raw=true "PolarOS UI2 Kit - Radio Box Input")
+A radio button is great for when you want to get one selction from the user. The radio button does only allow one selction, if you want the user to be able select more than one option try select boxes instead. It's called a radio box because it work just like the buttons on an old-fasion radio, you push one down and all the other come back up (Mozilla). To make a input into a radio box set the type attribute equal to radio, like `type="radio"`. To set the label text next to the radio box add the attribute placeholder inside the input element, ex. ` placeholder="Text Label"`. To link all the radio box togeather, so only one in the group can be selected at a time, set the attribute `name` and set all the input boxes you want to link with the same name. Then add a custom `value` attribution to each of the inputs in the group. In your javascript you can use the value attribute to get the selected radio box. To disable a radio box, so it can't be selected but is still visble add the attribute `disable` to the input.<br>
+ ![Alt text](images/radio-box-UI2.png?raw=true "PolarOS UI2 Kit - Radio Box Input")
 
 ```` html
 <input type="radio"
@@ -101,6 +101,7 @@ A radio button is great for when you want to get one selction from the user. The
 ````
 
 ### How to get Value
+We recommend using jQuery, the syntext is usally better and cleaner than pure javascript and it is all ready need to run Helium kit so you might as well use it. Plus, it is much easier to remember.<br>
 #### Pure Javascript
 ```` javascript
 document.querySelector('input[name="color"]:checked').value
@@ -112,7 +113,9 @@ $('input[name="color"]:checked').val();
 ````
 
 ## Check Boxes
-A check box is very similar to a radio box with one vast differnce, you can select multiple items. If you would like a user to only be able to select one item please look above at radio boxes. To create a check box add an input with the attribute type equal to checkbox, like `type="checkbox"`. To set the label next to the check box all you have to do is add another attrubute inside the input element called placeholder and set that equal to what you want your label to be, `placeholder="Text Label"`. To link all the check boxes togeather into a group set all the attribute `name` inside the inout element as the same. To disable a check box, so it can't be selected but is still visable add the attribute `disable` to the input.
+A check box is very similar to a radio box with one vast differnce, you can select multiple items. If you would like a user to only be able to select one item please look above at radio boxes. To create a check box add an input with the attribute type equal to checkbox, like `type="checkbox"`. To set the label next to the check box all you have to do is add another attrubute inside the input element called placeholder and set that equal to what you want your label to be, `placeholder="Text Label"`. To link all the check boxes togeather into a group set all the attribute `name` inside the inout element as the same. To disable a check box, so it can't be selected but is still visable add the attribute `disable` to the input.<br>
+ ![Alt text](images/check-box-UI2.png?raw=true "PolarOS UI2 Kit - Check Box Input")
+
 ```` html
 <input type="checkbox" name="extracranial" value="music" placeholder="Music"></input>
 <input type="checkbox" name="extracranial" value="sports" placeholder="Sports"></input>
@@ -121,10 +124,7 @@ A check box is very similar to a radio box with one vast differnce, you can sele
 ````
 
 ### How to get Value
-#### Pure Javascript
-```` javascript
-document.querySelector('input[name="extracranial"]:checked').value
-````
+We recommend using jQuery, the syntext is usally better and cleaner than pure javascript and it is all ready need to run Helium kit so you might as well use it. Plus, it is much easier to remember. There is no easy way to get the checkboxs in Pure Javascript (if you find a easy way please submit it in the issue).<br>
 
 #### jQuery 
 ```` javascript
@@ -135,3 +135,40 @@ $("input[type=checkbox][name=extracranial]:checked").each(function(){
 ````
 
 ## Dropdown Select
+The select element is a great alternive to the radio box. It is great for when you need to get one peice of data from a large selection. To create a dropdown selector make and element called `<select/>` then add and attribute called `placeholder` this will be for the defualt label or what you want answered. Then make another attribute called `name` this will be used to grab information from the selector. To add options to your selector just add element within the `select` element called `<option/>` add the attribute `value` this is for grabbing the selected one from the dropdown.<br>
+ ![Alt text](images/dropdown-select-UI2.gif?raw=true "PolarOS UI2 Kit - Dropdown Selector")
+
+```` html
+<select placeholder="Your Favorite Car?" name="car"> 
+  <option value="mustang">Mustang</option>
+  <option value="camaro">Camaro</option>
+  <option value="challenger">Challenger</option>
+</select>
+````
+
+### How to get Value
+We recommend using jQuery, the syntext is usally better and cleaner than pure javascript and it is all ready need to run Helium kit so you might as well use it. Plus, it is much easier to remember.<br>
+#### Pure Javascript
+If you use javascript you need to <b>add an `id` attribute</b> to your select element.
+```` javascript
+document.getElementById("car").value
+````
+
+#### jQuery 
+```` javascript
+$( "select[name=car] option:selected" ).attr( "value" );
+````
+
+## Text Tags
+Tags are perfect for just that taging thing. It can also be great to get keywords. When you hover on them they will glow Polar Blue and have a beval so you can see each indival tag sepertly. There is no extra code needed and is just an element so you can grab any inputs from the user. They are block-inline elements so add `<br>` to break to the next line to add the text or tag after the tag below it.<br>
+ ![Alt text](images/tag-UI2.gif?raw=true "PolarOS UI2 Kit - Tags")
+ 
+ ```` html
+<tag>Fun</tag>
+<tag>Summer</tag>
+<tag>Swimming</tag>
+<tag>Sun</tag>
+````
+
+## Accordion
+
