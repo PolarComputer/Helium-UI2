@@ -21,7 +21,7 @@ Add the following code to the bottom.<br>
 <head>
   <meta charset="UTF-8">
   <title>PolarOS UI2 Kit</title>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/60734459/UI2.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/4af4b4f4/UI2.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -31,15 +31,17 @@ Add the following code to the bottom.<br>
   
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js'></script>
-<script  src="https://github.com/PolarComputer/PolarOS-UI2/blob/master/UI2.min.js"></script>
+<script  src="https://cdn.rawgit.com/PolarComputer/Helium-UI2/ff8fdbfb/UI2.min.js"></script>
   
 </html>
 ```
 
 ## CDN <br>
 If you don't want to download the files for use on your servers, you can just use our CDN hosted by rawgit. Keep in mind, if you do this your jquery maynot be built to run on on the newest verison we have.
-`https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/3ef224ed/UI2.min.js` <br>
-`https://cdn.rawgit.com/PolarComputer/PolarOS-UI2/60734459/UI2.min.css` <br>
+#### Version 1
+Note this version is missing charts.
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/ff8fdbfb/UI2.min.js` <br>
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/4af4b4f4/UI2.min.css` <br>
 
 ## UI Components
 bla bla
