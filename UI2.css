@@ -22,6 +22,7 @@ user-select: none; /* Standard */
 
 a {
   text-decoration: underline;
+  color: #000000;
 }
 
 a:hover {
