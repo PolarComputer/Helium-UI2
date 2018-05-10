@@ -1,4 +1,7 @@
-html {font-family: 'Open Sans', sans-serif;}
+html {
+  font-family: 'Open Sans', sans-serif; 
+  font-smooth: always;
+}
 h3 {
   font-weight: 300;
   font-size: 15px;
@@ -438,7 +441,10 @@ input[type=checkbox]:disabled+label {
   border: none;
 }
 .checkbox input[type="checkbox" i ] {
-  margin: 10px;
+/*   margin: 10px; */
+  width: 22px;
+  height: 22px;
+  margin: 0;
 }
 .checkbox input[type="checkbox"]:checked + label:after {
   transform: rotate(-45deg);
