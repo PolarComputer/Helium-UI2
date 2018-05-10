@@ -21,7 +21,7 @@ Add the following code to the bottom.<br>
 <head>
   <meta charset="UTF-8">
   <title>PolarOS UI2 Kit</title>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/4af4b4f4/UI2.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/PolarComputer/Helium-UI2/68edfb66/UI2.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -41,7 +41,7 @@ If you don't want to download the files for use on your servers, you can just us
 #### Version 1
 Note this version is missing charts.<br>
 `https://cdn.rawgit.com/PolarComputer/Helium-UI2/ff8fdbfb/UI2.min.js` <br>
-`https://cdn.rawgit.com/PolarComputer/Helium-UI2/4af4b4f4/UI2.min.css` <br>
+`https://cdn.rawgit.com/PolarComputer/Helium-UI2/68edfb66/UI2.min.css` <br>
 
 ## UI Components
 bla bla
