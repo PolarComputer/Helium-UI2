@@ -1,5 +1,8 @@
-# PolarOS-UI2
-How to add UI2 kit.
+# PolarOS Helium-UI2 (He2)
+Offical Name: Helium-UI2
+Unoffical Name: Helium Kit
+Shortcut Name: He2
+How to use Helium kit.
 
 ## Setup
 Add the following code to your header or top.<br>
