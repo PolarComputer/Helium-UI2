@@ -582,6 +582,17 @@ a.active:after {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.accordion a {
+  text-decoration: none;
+}
+
+.accordion .active {
+  color: white;
+}
+
+.accordion li:hover {
+  background: #EBEBF0;
+}
 
 
 
